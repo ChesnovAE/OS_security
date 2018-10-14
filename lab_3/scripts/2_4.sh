@@ -1,5 +1,5 @@
 #!/bin/bash
-while read line
+while read val
 do
-    echo $line | grep "bin" >&2
+    echo $val | grep "bin" >&2
 done
