@@ -1,0 +1,41 @@
+    1  ps xaf
+    2  ps xawf -eo pid,user,cgroup,args
+    3  ll /usr/lib/systemd/system
+    4  ll /run/systemd/system/
+    5  ll /etc/systemd/system
+    6  systemctl -t help
+    7  systemctl status
+    8  systemctl --type=service
+    9  systemctl status auditd.service
+   10  systemctlis-active auditd.service
+   11  systemctl is-active auditd.service
+   12  systemctl is-enabled auditd.service 
+   13  systemctl list-dependencies --after auditd.service 
+   14  systemctl list-dependencies --before auditd.service 
+   15  systemctl list-units --type=service
+   16  systemctl list-units --type=service --all
+   17  systemctl list-units --type=socket --all
+   18  systemctl list-unit-files --type=service
+   19  systemctl --failed --type=service
+   20  hostname
+   21  sudo yum update
+   22  sudo apt install apache2
+   23  sudo yum -y install httpd
+   24  systemctl status httpd.service
+   25  systemctl start httpd.service
+   26  systemctl status httpd.service
+   27  systemctl restart httpd.service
+   28  systemctl status httpd.service
+   29  systemctl stop httpd.service
+   30  systemctl enable httpd.service
+   31  systemctl disable httpd.service
+   32  systemctl mask httpd.service
+   33  systemctl unmask httpd.service
+   34  systemctl list-units --type=target
+   35  systemctl list-units --type=target --all
+   36  systemctl get-default
+   37  ls -l /etc/systemd/system/default.target
+   38  systemctl set-default multi-user.target 
+   39  systemctl isolate multi-user.target
+   40  systemctl --no-wall rescue
+   41  history > history.txt
